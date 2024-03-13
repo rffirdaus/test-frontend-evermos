@@ -1,7 +1,13 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   nitro: {
-    preset: 'vercel-edge',
+    static: true,
+  },
+  routeRules: {
+    // prerender index route by default
+    '/': { prerender: true },
+    // prerender this route and all child routes
+    '/prerender-multiple/**': { prerender: true },
   },
   head: {
     title: 'test-evermos',
