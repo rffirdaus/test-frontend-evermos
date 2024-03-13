@@ -4,7 +4,7 @@
 @import 'main/detailform.scss';
 
 $primary-color: #fff;
-$secondary-color: #6c757d;
+$secondary-color: rgba(0, 0, 0, 0.5);
 
 /* width */
 ::-webkit-scrollbar {
@@ -28,7 +28,7 @@ $secondary-color: #6c757d;
 
 body {
   font-family: 'SVN-Gilroy Light', sans-serif;
-  background-color: $secondary-color;
+  background-color: #FAFAFA;
   color: $primary-color;
   overflow-x: hidden;
   width: 100%;
@@ -91,7 +91,7 @@ a {
 .material-icons {
   margin-right: 1rem;
   font-size: 16px;
-  color: #fff;
+  color: $secondary-color;
 }
 
 .text-center {
@@ -131,7 +131,7 @@ a {
 
 .slider button {
   .material-icons {
-    color: gray;
+    color: #0080FF;
     font-size: 24px;
     margin-right: 0;
   }
@@ -142,7 +142,7 @@ a {
   transform: translateY(-30%);
   padding: 10px;
   background-color: transparent;
-  border: 1px solid gray;
+  border: 1px solid #0080FF;
   border-radius: 100%;
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.08));
   cursor: pointer;

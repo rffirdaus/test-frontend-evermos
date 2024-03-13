@@ -1,5 +1,6 @@
 .product {
   padding: 2rem 2rem 2rem 2rem;
+  color: rgba(0, 0, 0, 0.9);
   height: auto;
   position: relative;
   &__loading {
@@ -43,5 +44,8 @@
     font-size: 24px;
     font-weight: 700;
     color: #00171F;
+  }
+  h4 {
+    color: rgba(0, 0, 0, 0.5);
   }
 }

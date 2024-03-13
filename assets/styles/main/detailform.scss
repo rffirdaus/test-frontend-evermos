@@ -25,26 +25,34 @@
   &__title1 {
     font-size: 40px;
     font-weight: 700;
-    color: #00171F !important;
+    color: rgba(0, 0, 0, 0.9) !important;
   }
   &__title2 {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 6rem;
+    color: rgba(0, 0, 0, 0.5);
   }
   &__title3 {
     font-size: 30px;
     font-weight: 700;
-    color: #00171F !important;
+    color: rgba(0, 0, 0, 0.9) !important;
+  }
+  &__title4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
   }
   &__variance {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    color: rgba(0, 0, 0, 0.5);
     gap: 1;
     text-align: center;
   }
   &__selected--size {
-    border: 1px solid #fff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
@@ -61,6 +69,6 @@
     }
   }
   p {
-    color: #fff;
+    color: rgba(0, 0, 0, 0.5);
   }
 }

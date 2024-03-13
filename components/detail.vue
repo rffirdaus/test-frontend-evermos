@@ -22,10 +22,10 @@
           </p>
           <Rating v-model="rating" :total="totalRating" />
           <p class="detail__title3">Rp. {{ formatRupiah(price) }}</p>
-          <p>Selected Size</p>
+          <p class="detail__title4">Selected Size</p>
           <div class="detail__variance">
             <div v-for="(size, i) in variance.size" :key="i" class="detail__selected--size" :class="selectedSize === size ? 'border-active' : ''" @click="selectedButton(size)">
-              <p>{{ size }}</p>
+              <p class="detail__title4">{{ size }}</p>
             </div>
           </div>
           <div class="detail__button">
