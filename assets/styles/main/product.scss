@@ -11,7 +11,6 @@
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 1rem;
-    margin-right: 1.5rem;
   }
   &__card {
     background-color: #FDFDFD;
