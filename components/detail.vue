@@ -29,11 +29,11 @@
             </div>
           </div>
           <div class="detail__button">
-            <button type="submit" class="button-shopping">
-              <span class="material-icons">
-              shopping_cart
-              </span>
+            <button type="submit" class="button-cart">
               Add to Cart
+            </button>
+            <button type="submit" class="button-shopping">
+              Buy Now
             </button>
           </div>
         </div>
