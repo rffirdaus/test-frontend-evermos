@@ -1,5 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  nitro: {
+    preset: 'vercel-edge',
+  },
   head: {
     title: 'test-evermos',
     htmlAttrs: {
