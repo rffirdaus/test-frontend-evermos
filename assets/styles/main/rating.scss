@@ -1,0 +1,14 @@
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+  .active {
+    color: orange !important;
+  }
+  p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

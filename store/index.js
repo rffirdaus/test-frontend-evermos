@@ -1,7 +1,8 @@
 export const state = () => ({
   isLoading: false,
   error: null,
-  product: []
+  product: [],
+  detail: {}
 })
 
 export const mutations = {
@@ -14,7 +15,12 @@ export const mutations = {
   },
 
   setProduct(state, data) {
+    state.isLoading = true
     state.product = data
+  },
+
+  setDetail(state, data) {
+    state.detail = data
     state.isLoading = true
   },
 
@@ -28,6 +34,23 @@ export const actions = {
       .get('/product')
       .then((response) => {
         commit('setProduct', response.data)
+        commit('setLoading', false)
+        return response
+      })
+      .catch((e) => {
+        commit('setLoading', false)
+        commit('setError', e.response)
+      })
+    return false
+  },
+
+  async getDetail({ commit }, id) {
+    commit('setLoading', true)
+    commit('setError', null)
+    await this.$axios
+      .get(`/product/${id}`,)
+      .then((response) => {
+        commit('setDetail', response.data)
         commit('setLoading', false)
         return response
       })

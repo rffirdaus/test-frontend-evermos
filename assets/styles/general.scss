@@ -1,5 +1,7 @@
-@import '~/assets/styles/main/product.scss';
-@import '~/assets/styles/main/responsive.scss';
+
+@import 'main/rating.scss';
+@import 'main/product.scss';
+@import 'main/detailform.scss';
 
 $primary-color: #fff;
 $secondary-color: #6c757d;
@@ -37,6 +39,50 @@ a {
   text-decoration: none !important;
 }
 
+.flex {
+  display: flex;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.responsive-mobile1 {
+  width: 100%;
+}
+
+.border-active {
+  border: 1px solid #0080FF !important;
+}
+
+.responsive-mobile2 {
+  width: 100%;
+}
+
+.button-shopping {
+  width: 100%;
+  justify-content: center;
+  border: none;
+  color: $primary-color;
+  border-radius: 8px;
+  background-color: #0080FF;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.material-icons {
+  margin-right: 1rem;
+  font-size: 16px;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .loading {
   border: 4px solid $primary-color;
   border-top: 4px solid #000;
@@ -46,7 +92,59 @@ a {
   animation: spin 1s linear infinite;
 }
 
+.slider {
+  position: relative;
+  margin-right: 2rem;
+}
+
+.slider img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.slider .active {
+  display: block;
+}
+
+.slider div {
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.slider button {
+  .material-icons {
+    color: gray;
+    font-size: 24px;
+    margin-right: 0;
+  }
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-30%);
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 100%;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.08));
+  cursor: pointer;
+}
+
+
+.slider button:first-child {
+  left: 15px;
+}
+
+.slider button:last-child {
+  right: 10px;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+@import 'main/responsive.scss';

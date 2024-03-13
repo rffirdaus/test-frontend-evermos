@@ -1,10 +1,20 @@
 @media (min-width: 640px) {
   .product {
+    padding: 2rem 4rem 2rem 4rem;
     &__desc {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1rem;
     }
+  }
+  .detail {
+    padding: 2rem 4rem 2rem 4rem;
+  }
+  .responsive-mobile1 {
+    width: 50%;
+  }
+  .responsive-mobile2 {
+    width: 80%;
   }
 }
 
@@ -14,6 +24,21 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 1rem;
+    }
+  }
+  .detail {
+    &__desc {
+      display: flex;
+    }
+    &__variance {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      width: 500px;
+    }
+    &__button {
+      width: 44.6%;
+    }
+    &__title1 {
+      width: 500px;
     }
   }
 }

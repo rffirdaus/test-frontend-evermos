@@ -1,16 +1,27 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="product">
-    <h1>Product List</h1>
+    <div class="text-center">
+      <h4>TRENDING IS WEEK</h4>
+      <h1>Explore Our Product</h1>
+    </div>
     <div v-if="loading" class="product__loading">
       <div class="loading"></div>
     </div>
     <div v-else class="product__desc">
       <router-link :to="`/detail/${item.id}`" v-for="(item, i) in product" :key="i" class="product__card">
         <img :src="item.img" alt="Discover Nuxt 3" class="mb-4" />
+        <Rating v-model="item.rating" :total="item.totalRating" />
         <p class="product__title1">{{ item.nameProduct }}</p>
-        <p class="product__title2"><b>Color :</b> {{ item.variance.color }} <b>Size :</b> {{ item.variance.size }}</p>
         <p class="product__title3">Rp. {{ formatRupiah(item.price) }}</p>
+        <div class="product__button">
+          <button type="submit" class="button-shopping">
+            <span class="material-icons">
+            shopping_cart
+            </span>
+            Add to Cart
+          </button>
+        </div>
       </router-link>
     </div>
   </div>
