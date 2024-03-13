@@ -1,0 +1,42 @@
+.product {
+  padding: 2rem;
+  height: auto;
+  position: relative;
+  &__loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  &__desc {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    margin-right: 1.5rem;
+  }
+  &__card {
+    background-color: #FDFDFD;
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.08));
+    padding: 1rem;
+    border-radius: 12px;
+    img {
+      border-radius: 8px;
+      width: 100%;
+      height: 400px;
+    }
+  }
+  &__title1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #00171F;
+  }
+  &__title2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #667479;
+  }
+  &__title3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #00171F;
+  }
+}

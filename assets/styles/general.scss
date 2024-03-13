@@ -1,0 +1,51 @@
+@import '~/assets/styles/main/product.scss';
+@import '~/assets/styles/main/responsive.scss';
+
+$primary-color: #fff;
+$secondary-color: #6c757d;
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primary-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary-color;
+}
+
+body {
+  font-family: 'SVN-Gilroy Light', sans-serif;
+  background-color: $secondary-color;
+  color: $primary-color;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.loading {
+  border: 4px solid $primary-color;
+  border-top: 4px solid #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
