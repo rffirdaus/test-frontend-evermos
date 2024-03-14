@@ -1,5 +1,4 @@
 export default {
-  ssr: false,
   head: {
     title: 'test-evermos',
     htmlAttrs: {
