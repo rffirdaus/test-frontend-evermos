@@ -14,7 +14,7 @@
         </div>
         <div class="responsive-mobile2">
           <p class="detail__title1">{{ nameProduct }}</p>
-          <p class="detail__title2">
+          <p class="detail__title2 word-break">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
             similique neque. Minus qui, cupiditate natus fugiat iusto aperiam
             quae fuga! Incidunt id ipsa voluptate unde odit voluptatibus,
