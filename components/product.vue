@@ -2,7 +2,7 @@
 <template>
   <div class="product">
     <div class="text-center">
-      <h4>TRENDING IS WEEK</h4>
+      <h4>TRENDING THIS WEEK</h4>
       <h1>Explore Our Product</h1>
     </div>
     <div v-if="loading" class="product__loading">
