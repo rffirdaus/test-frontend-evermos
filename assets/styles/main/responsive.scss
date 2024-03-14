@@ -34,6 +34,7 @@
   .detail {
     &__desc {
       display: flex;
+      padding: 0 10rem 0 10rem;
     }
     &__variance {
       grid-template-columns: repeat(5, minmax(0, 1fr));
