@@ -15,10 +15,12 @@
     gap: 1rem;
   }
   &__card {
-    background-color: #FDFDFD;
-    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.08));
+    background-color: #F5F5F5;
     padding: 1rem;
     border-radius: 12px;
+    img:hover {
+      transform: scale(0.9);
+    }
     img {
       border-radius: 8px;
       width: 100%;

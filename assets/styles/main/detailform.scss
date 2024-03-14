@@ -63,7 +63,10 @@
     justify-content: center;
   }
   .rating {
-    font-size: 40px;
+    .material-icons {
+      margin-right: 0;
+      font-size: 30px;
+    }
     p {
       font-size: 22px;
     }

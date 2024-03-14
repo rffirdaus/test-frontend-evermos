@@ -111,6 +111,9 @@ a {
 }
 
 .slider {
+  img:hover {
+    transform: scale(0.9);
+  }
   position: relative;
   margin-right: 2rem;
 }
@@ -121,6 +124,8 @@ a {
   height: auto;
   border-radius: 12px;
   object-fit: contain;
+  transition: all 1s ease-out;
+  transition-delay: 250ms;
 }
 
 .slider .active {
@@ -160,6 +165,7 @@ a {
 .slider button:last-child {
   right: 10px;
 }
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }

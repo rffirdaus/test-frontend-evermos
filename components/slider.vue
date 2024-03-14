@@ -1,5 +1,8 @@
 <template>
-  <div class="slider">
+  <div v-if="images.length === 0" class="product__loading">
+    <div class="loading"></div>
+  </div>
+  <div v-else class="slider">
     <div v-for="(image, index) in images" :key="index" :class="{ 'active': index === currentIndex }">
       <img :src="image.src">
     </div>

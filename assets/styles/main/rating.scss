@@ -1,9 +1,12 @@
 .rating {
   display: flex;
   align-items: center;
-  font-size: 20px;
   cursor: pointer;
   color: gray;
+  .material-icons {
+    margin-right: 0;
+    font-size: 20px;
+  }
   .active {
     color: orange !important;
   }

@@ -1,6 +1,6 @@
 <template>
   <div class="rating">
-    <span v-for="star in stars" :key="star" :class="{ 'active': star <= rating }">&#9733;</span>
+    <span v-for="star in stars" :key="star" class="material-icons" :class="{ 'active': star <= rating }">star_rate</span>
     <p>{{ `(${total})` }}</p>
   </div>
 </template>
