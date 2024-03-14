@@ -1,5 +1,5 @@
 export default {
-  ssr: false,
+  ssr: false, // bila ssr true, deploy to vercell gagal
   head: {
     title: 'test-evermos',
     htmlAttrs: {

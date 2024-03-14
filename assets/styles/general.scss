@@ -43,6 +43,10 @@ a {
   display: flex;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .w50 {
   width: 50%;
 }
@@ -112,10 +116,14 @@ a {
 
 .slider {
   img:hover {
-    transform: scale(0.9);
+    transform: scale(1.1);
+    transition: 1s ease-out;
   }
   position: relative;
   margin-right: 2rem;
+}
+.slider:hover {
+  box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.2);
 }
 
 .slider img {

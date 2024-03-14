@@ -10,7 +10,7 @@
     </div>
     <div v-else class="product__desc">
       <router-link :to="`/detail/${item.id}`" v-for="(item, i) in product" :key="i" class="product__card">
-        <div>
+        <div class="overflow-hidden">
           <img :src="item.img" alt="Discover Nuxt 3" class="mb-4" />
         </div>
         <Rating v-model="item.rating" :total="item.totalRating" />
